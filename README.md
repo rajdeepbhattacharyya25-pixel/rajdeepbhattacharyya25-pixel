@@ -7,7 +7,7 @@
   <!-- Quick Badges / Action Row -->
   <a href="https://venderflow.vercel.app"><img src="https://img.shields.io/badge/Live_SaaS-VendorFlow-2563eb?style=for-the-badge&logo=vercel&logoColor=white" alt="VendorFlow SaaS" /></a>
   <a href="https://pixel-lock.vercel.app"><img src="https://img.shields.io/badge/Live_Tool-PixelLock-1d4ed8?style=for-the-badge&logo=shield&logoColor=white" alt="PixelLock Stego" /></a>
-  <a href="https://aipersona-zeta.vercel.app"><img src="https://img.shields.io/badge/Live_App-AI_Persona-3b82f6?style=for-the-badge&logo=google&logoColor=white" alt="AI Persona" /></a>
+  <a href="https://therapy-ai-green.vercel.app"><img src="https://img.shields.io/badge/Live_App-Therapy_AI-3b82f6?style=for-the-badge&logo=google&logoColor=white" alt="Therapy AI" /></a>
   <a href="mailto:rajdeep.bhattacharyya25@gmail.com"><img src="https://img.shields.io/badge/Contact-Get_in_Touch-1e40af?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
   <a href="https://komarev.com/ghpvc/?username=rajdeepbhattacharyya25-pixel&color=2563eb&style=for-the-badge&label=VISITS"><img src="https://komarev.com/ghpvc/?username=rajdeepbhattacharyya25-pixel&color=2563eb&style=for-the-badge&label=VISITS" alt="Visits" /></a>
 
@@ -126,7 +126,7 @@ I am a **Full-Stack & Systems Engineer** focused on building high-performance we
 
 - **LLM Integration**: Direct orchestration with Google Gemini API models using streaming token processing.
 - **Modern Interface**: React, TypeScript, and responsive Tailwind styling with instant chat history persistence.
-- **Links**: [🌐 Live Application](https://aipersona-zeta.vercel.app) • [💻 Source Code](https://github.com/rajdeepbhattacharyya25-pixel/AI-PERSONa)
+- **Links**: [🌐 Live Application](https://therapy-ai-green.vercel.app) • [💻 Source Code](https://github.com/rajdeepbhattacharyya25-pixel/AI-PERSONa)
 
 ---
 
