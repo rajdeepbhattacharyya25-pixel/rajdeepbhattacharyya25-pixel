@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Background Gradients -->
+    <radialGradient id="cobaltGlow" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#1e3a8a" stop-opacity="0.38"/>
+      <stop offset="50%" stop-color="#0f172a" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#050811" stop-opacity="1"/>
+    </radialGradient>
+    
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="45%" stop-color="#bfdbfe"/>
+      <stop offset="85%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+
+    <linearGradient id="cobaltLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e3a8a" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#2563eb" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#60a5fa" stop-opacity="1"/>
+      <stop offset="75%" stop-color="#2563eb" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#1e3a8a" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0b1120" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="techGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.75" stroke-opacity="0.45"/>
+    </pattern>
+    
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+      
+      @keyframes pulseBeacon {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.35; transform: scale(0.9); }
+      }
+      @keyframes scanLaser {
+        0% { transform: translateX(-1200px); }
+        100% { transform: translateX(1200px); }
+      }
+      .beacon { transform-origin: 55px 45px; animation: pulseBeacon 2.4s ease-in-out infinite; }
+      .laser { animation: scanLaser 6s linear infinite; }
+    </style>
+  </defs>
+
+  <!-- Base Canvas -->
+  <rect width="1200" height="360" rx="14" fill="#050811"/>
+  <rect width="1200" height="360" rx="14" fill="url(#cobaltGlow)"/>
+  <rect width="1200" height="360" rx="14" fill="url(#techGrid)"/>
+
+  <!-- Border Frame -->
+  <rect width="1198" height="358" x="1" y="1" rx="13" fill="none" stroke="#1e3a8a" stroke-width="1.2" stroke-opacity="0.6"/>
+
+  <!-- Top System Bar -->
+  <g id="systemBar">
+    <circle cx="55" cy="45" r="4.5" fill="#10b981" class="beacon"/>
+    <circle cx="55" cy="45" r="8" fill="none" stroke="#10b981" stroke-width="1" stroke-opacity="0.4" class="beacon"/>
+    <text x="75" y="49" fill="#38bdf8" class="mono" font-size="11.5" font-weight="600" letter-spacing="1.2">SYSTEM://ONLINE &bull; PRODUCT ARCHITECT &amp; SYSTEMS ENGINEER</text>
+    <text x="1145" y="49" text-anchor="end" fill="#64748b" class="mono" font-size="11.5" letter-spacing="1">REGION://GLOBAL &bull; STACK: REACT 19 &bull; TS &bull; WEBGL</text>
+  </g>
+
+  <!-- Divider Line -->
+  <line x1="45" y1="68" x2="1155" y2="68" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Hero Identity Typography -->
+  <g id="heroContent">
+    <text x="45" y="132" fill="url(#titleGrad)" class="sans" font-size="52" font-weight="800" letter-spacing="-1.5">RAJDEEP BHATTACHARYYA</text>
+    <text x="48" y="166" fill="#60a5fa" class="mono" font-size="16" font-weight="600" letter-spacing="2.8">// FULL-STACK ARCHITECT &amp; AI SYSTEMS ENGINEER</text>
+    <text x="48" y="198" fill="#94a3b8" class="sans" font-size="15" font-weight="400">
+      Architecting production multi-tenant SaaS engines, client-side zero-knowledge cryptography, and spatial 3D web interfaces.
+    </text>
+  </g>
+
+  <!-- 4 Architecture Cards -->
+  <g id="cards" transform="translate(45, 230)">
+    <!-- Card 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="262" height="88" rx="8" fill="url(#cardGrad)" stroke="#1e3a8a" stroke-width="1" stroke-opacity="0.75"/>
+      <text x="16" y="28" fill="#38bdf8" class="mono" font-size="10.5" font-weight="700" letter-spacing="1.5">01 // SAAS SYSTEMS</text>
+      <text x="16" y="52" fill="#f1f5f9" class="sans" font-size="14" font-weight="600">Multi-Tenant Platforms</text>
+      <text x="16" y="71" fill="#64748b" class="mono" font-size="11">React 19 &bull; Supabase RLS</text>
+    </g>
+
+    <!-- Card 2 -->
+    <g transform="translate(282, 0)">
+      <rect width="262" height="88" rx="8" fill="url(#cardGrad)" stroke="#1e3a8a" stroke-width="1" stroke-opacity="0.75"/>
+      <text x="16" y="28" fill="#38bdf8" class="mono" font-size="10.5" font-weight="700" letter-spacing="1.5">02 // APPLIED CRYPTO</text>
+      <text x="16" y="52" fill="#f1f5f9" class="sans" font-size="14" font-weight="600">Zero-Knowledge Web</text>
+      <text x="16" y="71" fill="#64748b" class="mono" font-size="11">AES-GCM 256 &bull; LSB Stego</text>
+    </g>
+
+    <!-- Card 3 -->
+    <g transform="translate(564, 0)">
+      <rect width="262" height="88" rx="8" fill="url(#cardGrad)" stroke="#1e3a8a" stroke-width="1" stroke-opacity="0.75"/>
+      <text x="16" y="28" fill="#38bdf8" class="mono" font-size="10.5" font-weight="700" letter-spacing="1.5">03 // 3D GRAPHICS &amp; CV</text>
+      <text x="16" y="52" fill="#f1f5f9" class="sans" font-size="14" font-weight="600">Spatial Interactive Web</text>
+      <text x="16" y="71" fill="#64748b" class="mono" font-size="11">Three.js &bull; MediaPipe Vision</text>
+    </g>
+
+    <!-- Card 4 -->
+    <g transform="translate(846, 0)">
+      <rect width="264" height="88" rx="8" fill="url(#cardGrad)" stroke="#1e3a8a" stroke-width="1" stroke-opacity="0.75"/>
+      <text x="16" y="28" fill="#38bdf8" class="mono" font-size="10.5" font-weight="700" letter-spacing="1.5">04 // AUTONOMOUS AI</text>
+      <text x="16" y="52" fill="#f1f5f9" class="sans" font-size="14" font-weight="600">Agentic Toolchains</text>
+      <text x="16" y="71" fill="#64748b" class="mono" font-size="11">Gemini 2.5 &bull; Multi-Agents</text>
+    </g>
+  </g>
+
+  <!-- Bottom Accent Laser Line -->
+  <line x1="0" y1="358" x2="1200" y2="358" stroke="url(#cobaltLine)" stroke-width="2.5"/>
+</svg>
